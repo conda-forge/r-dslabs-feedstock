@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dslabs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dslabs/dslabs_{{ version }}.tar.gz
-  sha256: 1c3535e06105b3619e7a57a82bb4e0c2d38a8bebdff3138fd38fd2153e506dca
+  sha256: 3aae49b9d3a0ccff896224518f6c5adb785f9270b1586fb9165b909b6698eadd
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
